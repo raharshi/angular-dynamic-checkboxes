@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   name = 'Angular';
 
-  options = ["1", "2", "3", "4", "5"]
-  selected = ["1", "2", "5"]
+  options = ["orange", "apple", "banana", "papaya", "kiwi"]
+  selected = ["kiwi", "orange", "banana"]
 
   // check if the item are selected
   checked(item){

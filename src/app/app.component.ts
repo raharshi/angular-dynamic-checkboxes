@@ -11,13 +11,6 @@ export class AppComponent  {
   options = ["orange", "apple", "banana", "papaya", "kiwi"]
   selected = ["kiwi", "orange", "banana"]
 
-  // check if the item are selected
-  checked(item){
-    if(this.selected.indexOf(item) != -1){
-      return true;
-    }
-  }
-
   // when checkbox change, add/remove the item from the array
   onChange(checked, item){
     if(checked){

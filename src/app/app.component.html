@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<div *ngFor="let item of options">
+  <input type="checkbox" 
+  (change)="onChange($event.target.checked, item)"
+  [checked]="checked(item)"
+>
+  {{item}}
+</div>
+
+<p  *ngFor="let item of selected"> {{item}}</p>
